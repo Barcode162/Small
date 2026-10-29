@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>VELN</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23090a0c' width='32' height='32'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffb020'/%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%23ff4d1a' stroke-width='2'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <section id="stage">
+        <canvas id="view"></canvas>
+        <button id="hit" type="button" aria-label="Strike the core"></button>
+        <header id="hud">
+          <div class="topline">
+            <div>
+              <p class="mark">VELN</p>
+              <p class="eyebrow">Probability press</p>
+            </div>
+            <div class="iconrow">
+              <button id="btn-sound" type="button" aria-label="Toggle sound">Snd</button>
+              <button id="btn-gear" type="button" aria-label="Settings">Set</button>
+            </div>
+          </div>
+          <p id="flux" class="flux">0</p>
+          <div class="subline">
+            <span id="rate">0/s</span>
+            <span id="combo"></span>
+            <span id="streak"></span>
+          </div>
+          <div class="heat" aria-hidden="true"><span id="heat"></span></div>
+          <div id="form" class="form" aria-hidden="true"></div>
+          <p id="currencies"><span id="sparks">0 sparks</span> · <span id="echoes">0 echo</span></p>
+        </header>
+        <p id="coach">Strike as the notch hits the gate.</p>
+        <div id="storm" hidden></div>
+        <div id="toasts"></div>
+      </section>
+      <aside id="dock">
+        <div id="quick"></div>
+        <div id="tabs" class="tabs"></div>
+        <div id="modes" class="modes"></div>
+        <div id="panel"></div>
+      </aside>
+    </div>
+    <div id="modal" hidden></div>
+    <script src="game.js"></script>
+  </body>
+</html>
